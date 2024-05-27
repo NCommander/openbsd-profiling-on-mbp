@@ -1,0 +1,10 @@
+Unix Benchmark Utility v.0.3
+Copyright (C) July, 1999 PhysTech, Inc.
+Author: Sergei Viznyuk <sv@phystech.com>
+http://www.phystech.com/download/ubench.html
+OpenBSD 7.5 GENERIC.PROF#0 arm64
+Ubench CPU:   886494
+Ubench MEM:    18871
+--------------------
+Ubench AVG:   452682
+
