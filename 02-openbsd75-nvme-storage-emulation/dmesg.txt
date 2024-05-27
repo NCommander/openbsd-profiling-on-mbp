@@ -1,0 +1,135 @@
+OpenBSD 7.5 (profile-build) #0: Mon May 13 23:33:51 EDT 2024
+    ncmdr@openbsdmaker.my.domain:/home/ncmdr/profile-build
+real mem  = 4285407232 (4086MB)
+avail mem = 4068421632 (3879MB)
+random: good seed from bootblocks
+mainbus0 at root: ACPI
+psci0 at mainbus0: PSCI 1.1
+efi0 at mainbus0: UEFI 2.7
+efi0: EDK II rev 0x10000
+smbios0 at efi0: SMBIOS 3.0.0
+smbios0:
+smbios0: QEMU QEMU Virtual Machine
+cpu0 at mainbus0 mpidr 0: Unknown, MIDR 0x610f0000
+cpu0: 128KB 64b/line 4-way L1 PIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu0: 16384KB 128b/line 16-way L2 cache
+cpu0: TLBIOS+IRANGE,TS+AXFLAG,FHM,DP,SHA3,RDM,Atomic,CRC32,SHA2+SHA512,SHA1,AES+PMULL,SPECRES,SB,FRINTTS,GPI,LRCPC+LDAPUR,FCMA,JSCVT,API+PAC,DPB,SpecSEI,PAN+ATS1E1,LO,HPDS,CSV3,CSV2,DIT
+cpu1 at mainbus0 mpidr 1: Unknown, MIDR 0x610f0000
+cpu1: 128KB 64b/line 4-way L1 PIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu1: 16384KB 128b/line 16-way L2 cache
+cpu2 at mainbus0 mpidr 2: Unknown, MIDR 0x610f0000
+cpu2: 128KB 64b/line 4-way L1 PIPT I-cache, 64KB 64b/line 8-way L1 D-cache
+cpu2: 16384KB 128b/line 16-way L2 cache
+cpu3 at mainbus0 mpidr 3: Unknown, MIDR 0x610f0000
+cpu3: 128KB 64b/line 4-way L1 PIPT I-cache, 128KB 64b/line 8-way L1 D-cache
+cpu3: 16384KB 128b/line 16-way L2 cache
+apm0 at mainbus0
+ampintc0 at mainbus0 nirq 288, ncpu 4 ipi: 0, 1, 2: "interrupt-controller"
+ampintcmsi0 at ampintc0: nspi 64
+agtimer0 at mainbus0: 24000 kHz
+acpi0 at mainbus0: ACPI 6.0
+acpi0: sleep states
+acpi0: tables DSDT FACP APIC PPTT GTDT MCFG SPCR DBG2 IORT BGRT
+acpi0: wakeup devices
+acpimcfg0 at acpi0
+acpimcfg0: addr 0x3f000000, bus 0-15
+acpiiort0 at acpi0
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+"ACPI0007" at acpi0 not configured
+pluart0 at acpi0 COM0 addr 0x9000000/0x1000 irq 33
+pluart0: console
+"QEMU0002" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+"LNRO0005" at acpi0 not configured
+acpipci0 at acpi0 PCI0
+pci0 at acpipci0
+0:1:0: rom address conflict 0xfffc0000/0x40000
+"Red Hat Host" rev 0x00 at pci0 dev 0 function 0 not configured
+virtio0 at pci0 dev 1 function 0 "Qumranet Virtio Network" rev 0x00
+vio0 at virtio0: address 12:95:6d:00:27:2f
+virtio0: msix per-VQ
+virtio1 at pci0 dev 2 function 0 "Qumranet Virtio 1.x GPU" rev 0x01
+viogpu0 at virtio1: 1280x800, 32bpp
+wsdisplay0 at viogpu0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+virtio1: msix per-VQ
+azalia0 at pci0 dev 3 function 0 "Intel 82801FB HD Audio" rev 0x01: msi
+azalia0: No codecs found
+xhci0 at pci0 dev 4 function 0 "NEC xHCI" rev 0x03: msix, xHCI 0.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "NEC xHCI root hub" rev 3.00/1.00 addr 1
+xhci1 at pci0 dev 5 function 0 "Red Hat xHCI" rev 0x01: msix, xHCI 0.0
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 "Red Hat xHCI root hub" rev 3.00/1.00 addr 1
+nvme0 at pci0 dev 6 function 0 "Red Hat NVMe" rev 0x02: msix, NVMe 1.4
+nvme0: QEMU NVMe Ctrl, firmware 7.2.0, serial E4B42F77-341F-45CD-B
+scsibus0 at nvme0: 257 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: <NVMe, QEMU NVMe Ctrl, 7.2.>
+sd0: 65536MB, 512 bytes/sector, 134217728 sectors
+virtio2 at pci0 dev 7 function 0 "Qumranet Virtio Console" rev 0x00
+virtio2: no matching child driver; not configured
+virtio3 at pci0 dev 8 function 0 "Qumranet Virtio RNG" rev 0x00
+viornd0 at virtio3
+virtio3: msix per-VQ
+acpige0 at acpi0 irq 41
+acpibtn0 at acpi0: PWRB
+Profiling kernel, textsize=13216020 [ffffff8000000000..ffffff8000c9a914]
+uhidev0 at uhub0 port 5 configuration 1 interface 0 "QEMU QEMU USB Tablet" rev 2.00/0.00 addr 2
+uhidev0: iclass 3/0
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+uhidev1 at uhub0 port 6 configuration 1 interface 0 "QEMU QEMU USB Mouse" rev 2.00/0.00 addr 3
+uhidev1: iclass 3/1
+ums1 at uhidev1: 5 buttons, Z dir
+wsmouse1 at ums1 mux 0
+uhidev2 at uhub0 port 7 configuration 1 interface 0 "QEMU QEMU USB Keyboard" rev 2.00/0.00 addr 4
+uhidev2: iclass 3/1
+ukbd0 at uhidev2: 8 variable keys, 6 key codes
+wskbd0 at ukbd0 mux 1
+wskbd0: connecting to wsdisplay0
+uhub2 at uhub0 port 8 configuration 1 interface 0 "QEMU QEMU USB Hub" rev 1.10/1.01 addr 5
+umass0 at uhub2 port 1 configuration 1 interface 0 "QEMU QEMU USB HARDDRIVE" rev 2.00/0.00 addr 6
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+cd0 at scsibus1 targ 1 lun 0: <QEMU, QEMU CD-ROM, 2.5+> removable serial.46f40001:00:04.0-4.1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (8e39b3082cf2983a.a) swap on sd0b dump on sd0b
+uhub2: illegal enable change, port 1
+simplefb0 at mainbus0: 800x600, 32bpp
+wsdisplay1 at simplefb0 mux 1
+wsdisplay1: screen 0-5 added (std, vt100 emulation)
