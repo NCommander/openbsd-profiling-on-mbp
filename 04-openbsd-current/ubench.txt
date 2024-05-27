@@ -1,0 +1,10 @@
+gitmaker$ ubench
+Unix Benchmark Utility v.0.3
+Copyright (C) July, 1999 PhysTech, Inc.
+Author: Sergei Viznyuk <sv@phystech.com>
+http://www.phystech.com/download/ubench.html
+OpenBSD 7.5 GENERIC.MP#47 arm64
+Ubench CPU:  2440514
+Ubench MEM:     9267
+--------------------
+Ubench AVG:  1224890
